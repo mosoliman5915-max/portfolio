@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Hassan | Frontend Architect & WordPress Expert</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        :root { --accent: #ffffff; --bg: #050505; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--bg); color: var(--accent); scroll-behavior: smooth; }
+        .serif { font-family: 'Playfair Display', serif; }
+        
+        /* Premium Background Texture */
+        .noise { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: url('https://grainy-gradients.vercel.app/noise.svg'); opacity: 0.03; pointer-events: none; z-index: 999; }
+        
+        .glass-nav { background: rgba(5, 5, 5, 0.8); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.05); }
+        
+        .project-card { position: relative; border-radius: 8px; overflow: hidden; background: #0f0f0f; transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1); }
+        .project-card:hover { transform: translateY(-10px); }
+        .project-image { transition: scale 0.8s ease; filter: grayscale(40%) brightness(0.8); }
+        .project-card:hover .project-image { scale: 1.05; filter: grayscale(0%) brightness(1); }
+
+        .btn-premium { position: relative; overflow: hidden; transition: all 0.3s ease; }
+        .btn-premium::before { content: ''; position: absolute; bottom: 0; left: 0; width: 0%; height: 100%; background: white; z-index: -1; transition: all 0.4s ease; }
+        .btn-premium:hover { color: black; }
+        .btn-premium:hover::before { width: 100%; }
+        .copy{ color: rgba(0, 0, 0, 0.342); margin-top: 100px;}
+    </style>
+</head>
+<body class="antialiased">
+    <div class="noise"></div>
+
+    <nav class="fixed w-full z-50 glass-nav px-8 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="#" class="text-xl font-extrabold tracking-tighter serif italic">MH.</a>
+            
+            <div class="hidden md:flex gap-10 text-[10px] uppercase tracking-[0.3em] font-semibold opacity-60">
+                <a href="#work" class="hover:opacity-100 transition">Works</a>
+                <a href="#about" class="hover:opacity-100 transition">About</a>
+                <a href="#contact" class="hover:opacity-100 transition">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-6">
+                <a href="https://www.linkedin.com/in/mohamed-hassan-972556388?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="opacity-60 hover:opacity-100 transition"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+                <a href="https://www.instagram.com/mohamed_hassan543?igsh=MTc2M2Jlc3lnNzZ4eA==" target="_blank" class="opacity-60 hover:opacity-100 transition"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+                <a href="https://github.com/mosoliman5915-max" target="_blank" class="flex flex-col items-center gap-3 group">
+                    <i data-lucide="github" class="w-6 h-5"></i>
+                
+                </a>
+
+                <a href="mailto:m.soliman5915@su.edu.eg" class="btn-premium border border-white/20 px-5 py-2 rounded-full text-[10px] uppercase font-bold tracking-widest z-10">Email Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="min-h-screen flex flex-col justify-center items-center px-6 text-center relative">
+        <div data-aos="fade-down" class="mb-6 px-4 py-1 border border-white/10 rounded-full text-[10px] uppercase tracking-[0.3em] opacity-50">
+            Available for Freelance & Full-time
+        </div>
+        
+        <h1 data-aos="fade-up" class="serif text-[12vw] md:text-[8vw] leading-[0.9] mb-8 tracking-tighter">
+            Digital <br> <span class="italic font-light">Experience Designer.</span>
+        </h1>
+
+        <div data-aos="fade-up" data-aos-delay="200" class="max-w-2xl">
+            <p class="text-neutral-400 text-sm md:text-lg font-light leading-relaxed">
+                I'm <b>Mohamed Hassan</b>, a 20-year-old Frontend & WordPress Developer. 
+                <span class="text-white">ITI Certified</span>. I build high-end digital products with focus on performance and aesthetics.
+            </p>
+        </div>
+
+        <div class="absolute bottom-12 flex flex-col items-center opacity-30">
+            <p class="text-[9px] uppercase tracking-widest mb-4">Scroll Down</p>
+            <div class="w-[1px] h-12 bg-white"></div>
+        </div>
+    </section>
+
+    <section id="work" class="py-32 px-8 max-w-7xl mx-auto">
+        <div class="flex justify-between items-baseline mb-20 border-b border-white/5 pb-10">
+            <h2 class="serif text-4xl md:text-6xl italic italic">Featured Work</h2>
+            <p class="opacity-40 text-xs">03 Projects Selected</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <a href="https://github.com/mosoliman5915-max/e-commerce">
+            <div data-aos="fade-up" class="md:col-span-2 group">
+                
+                <div class="project-card aspect-[21/9]">
+             <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=2000" class="project-image w-full h-full object-cover" >
+                    <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all"></div>
+                </div>
+                <div class="mt-6 flex justify-between items-start">
+                    <div>
+                        
+                        <h3 class="text-2xl font-bold italic serif">E-Commerce Platform</h3>
+                        <p class="text-xs uppercase opacity-40 mt-1">Advanced Frontend • API Integration</p>
+                    </div>
+                    <i data-lucide="arrow-up-right" class="opacity-40"></i>
+                </div>
+            </a>
+            </div>
+
+            <div data-aos="fade-up">
+                <a href="https://github.com/mosoliman5915-max/landing-page">
+                <div class="project-card aspect-square">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1000" class="project-image w-full h-full object-cover">
+                </div>
+                <div class="mt-6">
+                    <h3 class="text-xl font-bold italic serif">landing page</h3>
+                    <p class="text-xs uppercase opacity-40 mt-1">Custom Development</p>
+                </div>
+                </a>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="200">
+                <a href="https://mosoliman5915-max.github.io/booking/">
+                <div class="project-card aspect-square">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000" class="project-image w-full h-full object-cover">
+                </div>
+                <div class="mt-6">
+                    <h3 class="text-xl font-bold italic serif">Booking page</h3>
+                    <p class="text-xs uppercase opacity-40 mt-1">Animations • UI/UX Design</p>
+                </div>
+            </div>
+        </a>
+
+        </div>
+    </section>
+
+    <section id="about" class="py-32 bg-[#080808]">
+        <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+            <div data-aos="fade-right">
+                <h3 class="text-[10px] uppercase tracking-[0.5em] text-blue-400 font-bold mb-6">Education & Excellence</h3>
+                <h2 class="serif text-4xl md:text-5xl mb-8 leading-tight">Certified by the Information Technology Institute (ITI).</h2>
+                <p class="text-neutral-400 leading-relaxed mb-10">
+                    My training at ITI refined my technical skills to meet international industry standards. At 20, I focus on writing scalable code and creating pixel-perfect WordPress experiences.
+                </p>
+                <div class="grid grid-cols-2 gap-8 text-[10px] uppercase tracking-widest font-bold">
+                   <div class="flex items-center gap-3"><span class="w-2 h-2 bg-white rounded-full"></span>Html / Css </div>
+                       <div class="flex items-center gap-3"><span class="w-2 h-2 bg-white rounded-full"></span>js / bootstrap</div>
+                    <div class="flex items-center gap-3"><span class="w-2 h-2 bg-white rounded-full"></span> React / Next.js</div>
+                    <div class="flex items-center gap-3"><span class="w-2 h-2 bg-white rounded-full"></span> Tailwind CSS</div>
+                    <div class="flex items-center gap-3"><span class="w-2 h-2 bg-white rounded-full"></span> WP Custom Themes</div>
+                    <div class="flex items-center gap-3"><span class="w-2 h-2 bg-white rounded-full"></span> UI Design</div>
+                </div>
+            </div>
+            <div data-aos="zoom-in" class="relative">
+                <div class="aspect-square border border-white/5 rounded-full flex items-center justify-center">
+                    <div class="aspect-square w-3/4 border border-white/10 rounded-full flex items-center justify-center animate-pulse">
+                        <span class="serif text-6xl italic">ITI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-40 px-8 text-center bg-white text-black">
+        <h2 data-aos="fade-up" class="serif text-5xl md:text-8xl italic mb-12">Let's build <br> the future.</h2>
+        
+        <div class="flex flex-col items-center gap-6">
+            <a href="mailto:mohamed@gmail.com" class="text-2xl md:text-4xl font-light hover:opacity-50 transition underline underline-offset-[12px]">mohamed@gmail.com</a>
+            
+            <div class="mt-20 flex gap-12">
+                <a href="https://www.linkedin.com/in/mohamed-hassan-972556388?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="flex flex-col items-center gap-3 group">
+                    <i data-lucide="linkedin" class="w-6 h-6"></i>
+                    <span class="text-[9px] uppercase tracking-widest font-black opacity-0 group-hover:opacity-100 transition">LinkedIn</span>
+                </a>
+                <a href="https://www.instagram.com/mohamed_hassan543?igsh=MTc2M2Jlc3lnNzZ4eA==" target="_blank" class="flex flex-col items-center gap-3 group">
+                    <i data-lucide="instagram" class="w-6 h-6"></i>
+                    <span class="text-[9px] uppercase tracking-widest font-black opacity-0 group-hover:opacity-100 transition">Instagram</span>
+                </a>
+                <a href="https://github.com/mosoliman5915-max" target="_blank" class="flex flex-col items-center gap-3 group">
+                    <i data-lucide="github" class="w-6 h-6"></i>
+                    <span class="text-[9px] uppercase tracking-widest font-black opacity-0 group-hover:opacity-100 transition">GitHub</span>
+                </a>
+            </div>
+        </div>
+        
+        <p class="copy ">© 2025 Mohamed Hassan. All rights Reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: false });
+        lucide.createIcons();
+    </script>
+</body>
+</html>
